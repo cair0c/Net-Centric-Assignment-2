@@ -1,3 +1,6 @@
+import socket
+
+
 class Assignment2:
     year = 0
 
@@ -54,3 +57,9 @@ class Assignment2:
 
     #Task 6
     def connectTcp(host, port):
+        try:
+            connection = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            connection.connect((host, port))
+            return True
+        except Exception as e:
+            return False
