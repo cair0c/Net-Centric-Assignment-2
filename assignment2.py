@@ -20,7 +20,9 @@ class Assignment2:
         anniversaries = []
 
         for year in range(totalYears):
-            if year % 10 == 0:
+            if year == 0:
+                continue
+            elif year % 10 == 0:
                 anniversaries.append(year)
 
         return anniversaries
