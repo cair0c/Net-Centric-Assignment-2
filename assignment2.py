@@ -39,7 +39,7 @@ class Assignment2:
 
         for item in range(len(yearMultiplied)):
             if item % 2 != 0:
-                oddPositions += yearMultiplied[item]
+                oddPositions += yearMultiplied[item-1]
 
 
         return f"{firstTwo + oddPositions}"
