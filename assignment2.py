@@ -5,7 +5,7 @@ class Assignment2:
     year = 0
 
     #Task 1
-    def __int__(self, year):
+    def __init__(self, year):
         self.year = year
 
     #Task 2
