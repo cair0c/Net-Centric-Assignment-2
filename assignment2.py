@@ -45,6 +45,7 @@ class Assignment2:
         return f"{firstTwo + oddPositions}"
 
     #Task 5
+    @staticmethod
     def checkGoodString(string):
         numbers = 0
 
@@ -52,12 +53,13 @@ class Assignment2:
             if item.isnumeric():
                 numbers += 1
 
-        if numbers < 2 and len(string) > 9 and string[0].islower():
+        if 0 < numbers < 2 and len(string) > 9 and string[0].islower():
             return True
         else:
             return False
 
     #Task 6
+    @staticmethod
     def connectTcp(host, port):
         try:
             connection = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
